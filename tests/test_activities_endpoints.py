@@ -29,6 +29,7 @@ class TestGetActivities:
             "Music Band",
             "Debate Club",
             "Science Club",
+            "Drama Club",
         ]
         for activity_name in expected_activities:
             assert activity_name in data
