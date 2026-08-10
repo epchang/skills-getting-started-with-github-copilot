@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
             if (response.ok) {
-              // Refresh activities
+              // Refresh activities (reset dropdown to avoid duplicated options)
+              activitySelect.length = 1;
               fetchActivities();
             } else {
               const result = await response.json();
